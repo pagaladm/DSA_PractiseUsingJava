@@ -16,7 +16,6 @@ public class Update {
         int value=sc.nextInt();
 
         // update the array
-        // 1. find the index
         for (int i = 0; i < n; i++) {
             arr[index]=value;
         }
@@ -27,7 +26,7 @@ public class Update {
             System.out.print(arr[i]+" ");
         }
         System.out.println();
-        
+
         sc.close();
     }
 }
