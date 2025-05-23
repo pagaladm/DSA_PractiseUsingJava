@@ -12,20 +12,26 @@ public class Update {
 
         System.out.print("Index to update: ");
         int index=sc.nextInt();
+
+        if(index<n && index>=0){
         System.out.print("\nNew Value: ");
         int value=sc.nextInt();
 
         // update the array
-        for (int i = 0; i < n; i++) {
-            arr[index]=value;
-        }
-
-        // output
+        arr[index]=value;
+        // handling extreme cases
+       
+            // output
         System.out.println("\nUpdated Array: ");
         for (int i = 0; i < n; i++) {
             System.out.print(arr[i]+" ");
         }
         System.out.println();
+        }
+        else{
+            System.out.println("Error: Invalid index!");
+        }
+        
 
         sc.close();
     }
