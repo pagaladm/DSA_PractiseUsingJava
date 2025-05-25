@@ -21,6 +21,12 @@ public class RotateArrayByK {
                 arr2[i]=arr[k];
                 k++;
             }
+
+            for (int i = 0; i < k; i++) {
+                arr2[i]=arr[n-1];
+                n--;
+
+            }
             System.out.print("Output Array: ");
             for (int i = 0; i < arr2.length; i++) {
                 System.out.print(arr2[i]+ " ");
