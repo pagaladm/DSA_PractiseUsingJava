@@ -17,15 +17,15 @@ public class RotateArrayByK {
             int n=arr.length;
             int[] arr2=new int[n];
 
-            for (int i = k; i < n; i++) {
-                arr2[i]=arr[k];
+            // insert into new array
+            for (int i = 0; i <= n-k; i++) {
+                arr2[k]=arr[i];
                 k++;
             }
-
-            for (int i = 0; i < k; i++) {
+        // insert last element  first
+            for(int i=k-1;i<k && i>=0;i--){
                 arr2[i]=arr[n-1];
                 n--;
-
             }
             System.out.print("Output Array: ");
             for (int i = 0; i < arr2.length; i++) {
