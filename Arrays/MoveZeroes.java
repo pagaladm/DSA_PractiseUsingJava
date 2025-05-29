@@ -75,6 +75,6 @@ public class MoveZeroes {
         }
         System.out.println("\n");
 
-
+sc.close();
     }
 }
