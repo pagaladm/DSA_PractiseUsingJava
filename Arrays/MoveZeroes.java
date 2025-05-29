@@ -36,16 +36,37 @@ public class MoveZeroes {
         System.out.println("\n");
 
         System.out.println("\n/* Using Method 2: using two pointers */");
-        int[] arr3={0,1,0,3,12,67,0,47,0,5};
-        int left=0;
-        int right=0;
-        while(left<=right){
-            if(arr3[right]!=0){
-                arr3[left]=arr3[right];
-                left++;
-            }
-            right++;
+        int[] arr3={0,1,0,3,4,5,0,6};
+
+        System.out.print("Input Array: ");
+        for (int i = 0; i < arr3.length; i++) {
+            System.out.print(arr3[i]+" ");
         }
+        System.out.println();
+
+        int nn=arr3.length;
+        int left=0;
+        int right=1;
+        while(right<nn){
+            if(arr3[left]==0){
+                if(arr3[right]!=0){
+                    int temp=arr3[right];
+                    arr3[right]=arr3[left];
+                    arr3[left]=temp;
+                    left++;
+                    right++;
+                }
+                else{
+                    right++;
+                }
+            }
+            else{
+                left++;
+                right++;
+            }
+        }
+
+        
         
         // output
         System.out.print("Output Array: ");
