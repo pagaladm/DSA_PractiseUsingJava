@@ -7,6 +7,7 @@ public class CheckAnagram {
         String str1=sc.nextLine();
         String str2=sc.nextLine();
         int isAnagram=1;
+        // learn to use this 
         for (int i = 0; i < str1.length(); i++) {
             int isLetterFound=0;
             for (int j = 0; j < str2.length(); j++) {
