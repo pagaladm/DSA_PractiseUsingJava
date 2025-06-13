@@ -10,6 +10,7 @@ public class RemoveDuplicateElements {
         for (int i = 0; i < str.length(); i++) {
             int isDuplicateFound=0;
             for (int j = i+1; j < str.length(); j++) {
+                // how to start loop, learn this
                 if(str.charAt(i)==str.charAt(j)){
                     isDuplicateFound=1;
                     break;
